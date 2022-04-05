@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra, Papel e Tesoura</title>
+  </head>
+  <body>
+    <div id="principal">
+      <h1 id="Titulo">Pedra, Papel e Tesoura</h1>
+      <div id="placar">
+        <div id="jogador">
+          <h2 id="jogador-nome">Kaio</h2>
+          <span id="jogador-pontos">0</span>
+
+          <ul id="jogador-escolha">
+            <li>
+              <a id="jogador-escolha-1" onclick="jogar(1)"
+                ><img src="images/pedra.svg"
+              /></a>
+            </li>
+            <li>
+              <a id="jogador-escolha-2" onclick="jogar(2)"
+                ><img src="images/papel.svg"
+              /></a>
+            </li>
+            <li>
+              <a id="jogador-escolha-3" onclick="jogar(3)"
+                ><img src="images/tesoura.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="versus">vs</div>
+
+        <div id="computador">
+          <h2 id="computador-nome">Computador</h2>
+          <span id="computador-pontos">0</span>
+
+          <ul id="computador-escolha">
+            <li>
+              <a id="computador-escolha-1"><img src="images/pedra.svg" /></a>
+            </li>
+            <li>
+              <a id="computador-escolha-2"><img src="images/papel.svg" /></a>
+            </li>
+            <li>
+              <a id="computador-escolha-3"><img src="images/tesoura.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mensagens">&nbsp;</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
